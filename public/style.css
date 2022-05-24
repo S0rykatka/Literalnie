@@ -1,0 +1,39 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game {
+    display: inline-block;
+    background: #bdbdbd;
+    border: 4px solid #bdbdbd;
+    border-radius: 4px;
+}
+.row {
+    display: flex;
+}
+.row .char {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid #bdbdbd;
+    border-radius: 2px;
+    font-size: 22px;
+    text-align: center;
+    caret-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.char:focus {
+    outline: none;
+    border: 2px solid #1976d2;
+
+    box-shadow: 0px 0px 9px 0px rgba(25, 118, 210, 1);
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(25, 118, 210, 1);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(25, 118, 210, 1);
+}
